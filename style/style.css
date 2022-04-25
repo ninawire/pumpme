@@ -1,0 +1,288 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100&display=swap');
+
+:root {
+    --font1: 'Alfa Slab One', cursive;
+    --font2: 'Montserrat', sans-serif;
+    --color1: #F1B930;
+    --color2: #C54920;
+    --color3: #854B5B;
+    --color4: #363430;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: var(--color4);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+header h2 {
+    font-size: 50px;
+    padding: 10px;
+    font-family: var(--font1);
+    color: var(--color2);
+    display: inline-block;
+}
+
+header p {
+    background-color: transparent;
+    color: var(--color1);
+    font-family: var(--font2);
+    font-size: 60px;
+    position: absolute;
+    top: 25px;
+    left: 140px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+header nav {
+    display: inline-block;
+    position: relative;
+    justify-self: end;
+    align-self: center;
+    padding: 20px 20px;
+    text-align: right;
+}
+
+ul {
+    list-style-type: none;
+    display: none;
+    
+}
+
+li {
+    padding: 20px;
+    font-family: var(--font2);
+    font-size: 20px;
+    color: var(--color1);
+    margin: 0;
+    background-color: var(--color4);
+}
+
+nav:hover {
+    margin-top: 3.4px;
+    cursor: pointer;
+}
+
+nav:hover ul {
+    display: block;
+    position: absolute;
+    right: 20px;
+}
+
+#mission {
+    color: var(--color1);
+    font-size: 20px;
+    width: 350px;
+    text-align: center;
+    padding: 30px 20px;
+    margin-left: 50px;
+}
+
+#mission q {
+    color: var(--color2);
+}
+
+#mission p {
+    padding-top: 20px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#act-1,
+#act-3 {
+    text-align: center;
+    width: 430px;
+    background-color: var(--color1);
+    padding: 10px;
+    margin: 10px auto;
+    color: var(--color4);
+}
+
+#act-1 p,
+#act-3 p {
+    padding-top: 10px;
+}
+
+.group-act,
+.altern-act {
+    font-family: var(--font1);
+    color: var(--color3);
+    font-size: 18px;
+}
+
+#act-2 {
+    text-align: center;
+    width: 430px;
+    background-color: var(--color2);
+    padding: 10px;
+    margin: 10px auto;
+    color: var(--color4);
+}
+
+#act-2 p {
+    padding-top: 10px;
+}
+
+.solo-act {
+    font-family: var(--font1);
+    color: var(--color1);
+    font-size: 18px;
+}
+
+#team {
+    color: var(--color1);
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+#team q {
+    color: var(--color2);
+}
+
+#team p {
+    padding-top: 20px;
+}
+
+.team-pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
+}
+
+
+/*Media query for 700px*/
+
+@media (min-width: 820px) {
+    #mission {
+        width: 500px;
+        font-size: 24px;
+    }
+
+    #act-1,
+    #act-2,
+    #act-3 {
+        width: 780px;
+    }
+
+    #act-1 h3,
+    #act-2 h3,
+    #act-3 h3 {
+        font-size: 30px;
+    }
+
+    #act-1 p,
+    #act-2 p,
+    #act-3 p {
+        font-size: 22px;
+    }
+}
+
+#locations {
+    text-align: center;
+    padding: 20px;
+}
+
+#locations h3 {
+    color: var(--color3);
+    font-family: var(--font1);
+    font-size: 30px;
+}
+
+#locations h4 {
+    font-family: var(--font2);
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+#locations p {
+    font-family: var(--font2);
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#add1 {
+    color: var(--color1);
+    width: 300px;
+    border: 1px solid var(--color1);
+    margin: 10px auto;
+}
+
+#add2 {
+    width: 300px;
+    border: 1px solid var(--color2);
+    margin: 10px auto;
+    color: var(--color2);
+}
+
+footer {
+    text-align: center;
+}
+
+footer img{
+    display: inline-block;
+}
+/*Media query for 1000px*/
+
+@media (min-width: 1000px) {
+    #mission,
+    #team {
+        width: 800px;
+        font-size: 30px;
+    }
+
+    li {
+        font-size: 26px;
+    }
+
+    .team-pics {
+        width: 800px;
+        margin: auto;
+    }
+
+    #team {
+        margin: auto;
+    }
+
+    #add1,
+    #add2 {
+        display: inline-block;
+        margin: 20px;
+    }
+
+}
+
+/*Media query for 1200px*/
+
+@media (min-width: 1200px) {
+    #mission {
+        width: 1000px;
+        font-size: 36px;
+        margin-left: 150px;
+    }
+
+    li {
+        font-size: 30px;
+    }
+}
